@@ -10,29 +10,39 @@
 //     console.log(` call to find nemo took ${t1-t0} milliseconds`)
 // }
 // findNemo(nemo)
-const findNemo = (array) => {
-    for(let i=0; i<array.length; i++){
-        if(array[i]==='nemo'){
-            console.log('found nemo')
-        }
+// const findNemo = (array) => {
+//     for(let i=0; i<array.length; i++){
+//         if(array[i]==='nemo'){
+//             console.log('found nemo')
+//         }
+//     }
+// }
+// findNemo(['nemo', 'dog'])
+
+// const findNemo2 = (array) =>{
+//     array.forEach(i=>{
+//         if(i==='nemo'){
+//             console.log('found nemo')
+//         }
+//     })
+// }
+// findNemo2(['dog', 'nemo'])
+
+// const findNemo3 = (array)=>{
+//     for(let i of array){
+//         if(i==='nemo'){
+//             console.log('found nemo')
+//         }
+//     }
+// }
+// findNemo3(['nemo', 'dog'])
+
+class player {
+    constructor(name, type){
+        this.name = name;
+        this.type = type;
+    }
+    introduction(){
+        console.log(`Hi, my name is ${this.name} and I am ${this.type}`)
     }
 }
-findNemo(['nemo', 'dog'])
-
-const findNemo2 = (array) =>{
-    array.forEach(i=>{
-        if(i==='nemo'){
-            console.log('found nemo')
-        }
-    })
-}
-findNemo2(['dog', 'nemo'])
-
-const findNemo3 = (array)=>{
-    for(let i of array){
-        if(i==='nemo'){
-            console.log('found nemo')
-        }
-    }
-}
-findNemo3(['nemo', 'dog'])
