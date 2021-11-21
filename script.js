@@ -135,17 +135,30 @@
 // }
 // console.log(repeat([1,2,1,4]));
 
-const repeat = (arr) => {
-	for (let i = 0; i < arr.length; i++) {
-		for (let j = 1; j < arr.length; j++) {
-			if(arr[i] === arr[j]) {
-				return arr[i];
-			} else if (arr[j]===arr[j+1]){
-                return arr[j]
-            }
+// const repeat = (arr) => {
+// 	for (let i = 0; i < arr.length; i++) {
+// 		for (let j = i+ 1; j < arr.length; j++) {
+// 			if(arr[i] === arr[j]) {
+// 				return arr[i];
+// 			} else if (arr[j]===arr[j+1]){
+//                 return arr[j]
+//             }
 		
-		}
-        return 'no recurrance';
-	}
-};
-console.log(repeat([2, 1,1,2,3,5,1,2,4]));
+// 		}
+//         return 'no recurrance';
+// 	}
+// };
+// console.log(repeat([2, 1,1,2,3,5,1,2,4]));
+
+const repeatHash = (arr) => {
+    let map = {}
+    for(let i=0;i<arr.length;i++){
+        if(map[arr[i]]!== undefined){
+            return arr[i]
+        } else {
+            map[arr[i]] = i
+        }
+    }
+    return 'no occurance'
+}
+console.log(repeatHash([2, 1, 2]));
