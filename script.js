@@ -150,15 +150,29 @@
 // };
 // console.log(repeat([2, 1,1,2,3,5,1,2,4]));
 
-const repeatHash = (arr) => {
-    let map = {}
-    for(let i=0;i<arr.length;i++){
-        if(map[arr[i]]!== undefined){
-            return arr[i]
-        } else {
-            map[arr[i]] = i
+// const repeatHash = (arr) => {
+//     let map = {}
+//     for(let i=0;i<arr.length;i++){
+//         if(map[arr[i]]!== undefined){
+//             return arr[i]
+//         } else {
+//             map[arr[i]] = i
+//         }
+//     }
+//     return 'no occurance'
+// }
+// console.log(repeat([2, 1, 1, 2]));
+
+//LL
+
+class LinkedList{
+    constructor(value){
+        this.head = {
+            value: value,
+            next: null
         }
+        this.tail = this.head;
+        this.length = 1;
     }
-    return 'no occurance'
 }
-console.log(repeatHash([2, 1, 2]));
+const myLinkedList = new LinkedList(10)
