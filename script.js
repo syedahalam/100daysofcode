@@ -524,14 +524,20 @@ class LinkedList{
 // console.log(myDoublyLinkedList.remove(1))
 // console.log(myDoublyLinkedList.printList())
 
-const sum = (num) => {
-    let arr =[]
-    let prod =0;
-   for(let i=0; i<num.length;i++){
-     arr.push(num[i]*num[i])
-     prod+=arr[i]
+// const sum = (num) => {
+//     let arr =[]
+//     let prod =0;
+//    for(let i=0; i<num.length;i++){
+//      arr.push(num[i]*num[i])
+//      prod+=arr[i]
      
-   }
-   return prod
+//    }
+//    return prod
+// }
+// console.log(sum([2,4]))
+
+const bool1 = (bool) => {
+    if(bool===true)return 'Yes'
+    if(bool===false)return 'No'
 }
-console.log(sum([2,4]))
+console.log(bool1(false))
