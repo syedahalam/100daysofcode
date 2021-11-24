@@ -523,7 +523,7 @@ class LinkedList{
 // console.log(myDoublyLinkedList.remove(3))
 // console.log(myDoublyLinkedList.remove(1))
 // console.log(myDoublyLinkedList.printList())
-
+////////////////////////////////////////////////
 // const sum = (num) => {
 //     let arr =[]
 //     let prod =0;
@@ -535,21 +535,33 @@ class LinkedList{
 //    return prod
 // }
 // console.log(sum([2,4]))
-
+///////////////////////////////////////////////
 // const bool1 = (bool) => {
 //     if(bool===true)return 'Yes'
 //     if(bool===false)return 'No'
 // }
 // console.log(bool1(false))
+// //////////////////////////////////////////
+// const sheep = (arrayOfSheep)=>{
+//     let counter =0;
+//     let array = [];
+//     for(let i=0;i<arrayOfSheep.length;i++){
+//         if(arrayOfSheep[i]===true){
+//             counter++
+//         }
+//     }
+//     return counter
+// }
+// console.log(sheep([true,false,true, false, true, true, true, false]))
 
-const sheep = (arrayOfSheep)=>{
-    let counter =0;
-    let array = [];
-    for(let i=0;i<arrayOfSheep.length;i++){
-        if(arrayOfSheep[i]===true){
-            counter++
-        }
+/////////////////////////////////////
+
+const fakeBin = (x) =>{
+    let arr =[]
+    for(let i=0;i<x.length;i++){
+           if(x[i]>=5)arr.push(1)
+           else arr.push(0)
     }
-    return counter
+    return arr.join('')
 }
-console.log(sheep([true,false,true, false, true, true, true, false]))
+console.log(fakeBin('4567382901'))
