@@ -556,12 +556,23 @@ class LinkedList{
 
 /////////////////////////////////////
 
-const fakeBin = (x) =>{
-    let arr =[]
-    for(let i=0;i<x.length;i++){
-           if(x[i]>=5)arr.push(1)
-           else arr.push(0)
+// const fakeBin = (x) =>{
+//     let arr =[]
+//     for(let i=0;i<x.length;i++){
+//            if(x[i]>=5)arr.push(1)
+//            else arr.push(0)
+//     }
+//     return arr.join('')
+// }
+// console.log(fakeBin('4567382901'))
+//////////////////////////////////////////
+
+const findUniq = (arr) => {
+    let a = [];
+    let b=[];
+    for(let i=0;i<arr.length;i++){
+        b= a.push(arr[i])
+        if(b!==a) return b
     }
-    return arr.join('')
 }
-console.log(fakeBin('4567382901'))
+console.log(findUniq([2,1,1,1,1,1,1,1]))
