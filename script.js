@@ -582,8 +582,22 @@ class LinkedList{
 // console.log(greet())
 ////////////////////////////////
 
-const makeNegative = (num) => {
-    if(num<0) return num
-    if(num>0) return -num
+// const makeNegative = (num) => {
+//     if(num<0) return num
+//     if(num>0) return -num
+// }
+// console.log(makeNegative(-4))
+///////////////////////////////////////////
+
+// const greet = (name) =>{
+//  let input=prompt('enter your name')
+//  console.log(`${input} hi`)
+// }
+// console.log(greet())
+
+const grow = (x) =>{
+   return x.reduce((x,y)=>x*y)
+   
+    // return arr.reduce((x,y)=>x+y)
 }
-console.log(makeNegative(-4))
+console.log(grow([2,2,2,2,2,2]))
