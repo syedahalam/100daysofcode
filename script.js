@@ -595,9 +595,27 @@ class LinkedList{
 // }
 // console.log(greet())
 
-const grow = (x) =>{
-   return x.reduce((x,y)=>x*y)
+// const grow = (x) =>{
+//    return x.reduce((x,y)=>x*y)
    
-    // return arr.reduce((x,y)=>x+y)
+//     // return arr.reduce((x,y)=>x+y)
+// }
+// console.log(grow([2,2,2,2,2,2]))
+//////////////////////////////////////////
+
+// const reverseWords = (str) => {
+// 	let reversed = str.split(' ').map((word) => {
+// 			return word.split('').reverse().join('');
+// 		})
+// 		.join(' ');
+// 	return reversed;
+// };
+// console.log(reverseWords('this is me'))
+
+const reversedWords = (str) => {
+    let reversed = str.split(' ').map(word=>{
+        return word.split('').reverse().join('')
+    }) .join(' ');
+    return reversed
 }
-console.log(grow([2,2,2,2,2,2]))
+console.log(reversedWords('this is me'))
