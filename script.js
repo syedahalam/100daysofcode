@@ -578,5 +578,12 @@ class LinkedList{
 // }
 // console.log(findUniq([1,1,2,1,1,1,1,1]))
 
-const greet = () =>  'hello world'
-console.log(greet())
+// const greet = () =>  'hello world'
+// console.log(greet())
+////////////////////////////////
+
+const makeNegative = (num) => {
+    if(num<0) return num
+    if(num>0) return -num
+}
+console.log(makeNegative(-4))
