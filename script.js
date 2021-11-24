@@ -536,8 +536,20 @@ class LinkedList{
 // }
 // console.log(sum([2,4]))
 
-const bool1 = (bool) => {
-    if(bool===true)return 'Yes'
-    if(bool===false)return 'No'
+// const bool1 = (bool) => {
+//     if(bool===true)return 'Yes'
+//     if(bool===false)return 'No'
+// }
+// console.log(bool1(false))
+
+const sheep = (arrayOfSheep)=>{
+    let counter =0;
+    let array = [];
+    for(let i=0;i<arrayOfSheep.length;i++){
+        if(arrayOfSheep[i]===true){
+            counter++
+        }
+    }
+    return counter
 }
-console.log(bool1(false))
+console.log(sheep([true,false,true, false, true, true, true, false]))
