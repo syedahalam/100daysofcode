@@ -612,10 +612,4 @@ class LinkedList{
 // };
 // console.log(reverseWords('this is me'))
 
-const reversedWords = (str) => {
-    let reversed = str.split(' ').map(word=>{
-        return word.split('').reverse().join('')
-    }) .join(' ');
-    return reversed
-}
-console.log(reversedWords('this is me'))
+// 
