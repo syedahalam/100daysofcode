@@ -1,0 +1,20 @@
+        h1 {
+            font-family: sans-serif;
+            text-align: center;
+        }
+    
+        p {
+            font-family: sans-serif;
+            text-align: center;
+            color: dark gray;
+        }
+        a{
+            color: rgb(167, 1, 78);
+            text-decoration: none;
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+        #todays-challenge{
+            
+        }
