@@ -620,26 +620,73 @@
 // }
 // printMyName()
  
-class Human{
-    constructor(){
-        this.gender = 'female'
-    }
-    printGender(){
-        console.log(this.gender);
-    }
-}
+// class Human{
+//     constructor(){
+//         this.gender = 'female'
+//     }
+//     printGender(){
+//         console.log(this.gender);
+//     }
+// }
 
 
-class Person extends Human{
-     constructor(){
-         super()
-         this.name ="Humna"
-         this.gender = "male"
-     }
-     printMyName(){
-         console.log(this.name);
-     }
- }
- const person = new Person()
- person.printMyName()
- person.printGender()
+// class Person extends Human{
+//      constructor(){
+//          super()
+//          this.name ="Humna"
+//          this.gender = "male"
+//      }
+//      printMyName(){
+//          console.log(this.name);
+//      }
+//  }
+//  const person = new Person()
+//  person.printMyName()
+//  person.printGender()
+
+// class Human{
+//     gender = 'female'
+
+//     printGender = () => {
+//         console.log(this.gender);
+//     }
+// }
+
+
+// class Person extends Human{
+//         name ="Humna"
+//         gender = "male"
+   
+//      printMyName = () => {
+//          console.log(this.name);
+//      }
+//  }
+//  const person = new Person()
+//  person.printMyName()
+//  person.printGender()
+
+
+// const array = [1,2,3];
+// [num1, num2] = array
+// // const newArray = [...array, 4,5];
+// console.log(num1, num2);
+
+// const person ={
+//     name:'Humna'
+// }
+
+// const newPerson ={
+//     ...person,
+//     age:41
+// }
+// console.log(newPerson);
+
+// const filter = (...args) => {
+//     return args.filter(element => element === 1)
+// }
+// console.log(filter(1,2,3));
+
+const numbers = [1,2,3];
+const doubleNumbers = numbers.map(num=>num*num);
+console.log(numbers);
+console.log(doubleNumbers)
