@@ -1,11 +1,19 @@
+body{
+    text-align: center;
+    background-color: rgb(233, 215, 207);
+    margin: 50px;
+}
+img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;   
+}
 h1 {
 	font-family: 'Oswald', sans-serif;
-	text-align: center;
 }
 
 p {
 	font-family: 'Fira Sans', sans-serif;
-	text-align: center;
 	color: dark gray;
 }
 a {
